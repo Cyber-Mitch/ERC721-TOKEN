@@ -3,7 +3,7 @@ import { ethers } from "hardhat";
 async function main() {
 
 
-  const Reentrancy = await ethers.getContractFactory("OlahFemi1");
+  const Reentrancy = await ethers.getContractFactory("Reentrancy");
   const reentrancy = await Reentrancy.deploy();
 
   await reentrancy.deployed();
